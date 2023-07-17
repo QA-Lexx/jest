@@ -15,3 +15,19 @@ describe("Books names test suit", () => {
     ]);
   });
 });
+
+describe("Books names test suit letter low register", () => {
+    it("Books names should be sorted in ascending order letter low register", () => {
+      expect(
+        sorting.sortByName([
+          "гарри поттер",
+          "властелин колец",
+          "волшебник изумрудного города",
+        ])
+      ).toEqual([
+        "властелин колец",
+        "волшебник изумрудного города",
+        "гарри поттер",
+      ]);
+    });
+  });
